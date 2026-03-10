@@ -295,7 +295,7 @@ header {
   gap: 10px;
 }
 .bigImageDiv {
-  border: 1px solid blue;
+  border: 1px solid red;
   width: 558px;
   height: 450px;
 }
@@ -436,6 +436,7 @@ footer iframe {
   }
   .bigImageDiv {
     width: 755px;
+    height: 450px;
   }
 }
 

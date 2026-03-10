@@ -9,8 +9,8 @@ fetch(`https://api.everrest.educata.dev/shop/products/id/${id}`)
     .then(data => {
         smallDiv.innerHTML = ""
         bigImage.src = data.images[0]
-        data.images.forEach((item, i) => smallDiv.innerHTML += `<div class="productSmallImages ${i === 0 ? 'activeImage' : ''}">
-                <img onclick="changeImage('${item}', ${i})" src="${item}" alt="">
+        data.images.forEach((item, i) => smallDiv.innerHTML += `<div onclick="changeImage('${item}', ${i})" class="productSmallImages ${i === 0 ? 'activeImage' : ''}">
+                <img  src="${item}" alt="">
             </div>`)
         let isOut = data.stock <= 0
         cardDetailsCenter.innerHTML = `<h1>${data.title}</h1>

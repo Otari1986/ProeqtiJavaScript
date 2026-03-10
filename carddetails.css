@@ -313,6 +313,7 @@ header {
   min-height: 100px;
 }
 .productSmallImages {
+  border: 1px solid yellow;
   width: 120px;
   /* height: 100%; */
   cursor: pointer;

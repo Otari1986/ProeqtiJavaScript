@@ -635,7 +635,7 @@ footer iframe {
   gap: 5px;
 }
 .signinForm {
-  width: 350px;
+  width: 250px;
   height: 350px;
   gap: 5px;
 }
@@ -643,7 +643,7 @@ footer iframe {
   gap: 5px;
 }
 .signinForm .fieldSignin input {
-  width: 250px;
+  width: 150px;
 }
 .onlineShopping {
   width: 250px;

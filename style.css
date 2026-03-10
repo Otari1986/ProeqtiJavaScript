@@ -589,3 +589,66 @@ footer iframe {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .registerForm {
+    padding: 0;
+  }
+  .registration {
+    gap: 5px;
+    font-size: 10px;
+    /* padding: 0; */
+  }
+  .registration .field {
+    gap: 5px;
+  }
+  .registration .formName {
+    /* width: 100%; */
+  flex-direction: column;
+  border: 1px solid red;
+  gap: 5px;
+}
+.registration .formEmail {
+  flex-direction: column;
+  border: 1px solid red;
+  gap: 5px;
+}
+.registration .formPhone {
+  flex-direction: column;
+  border: 1px solid red;
+  gap: 5px;
+}
+.registration .formAddress {
+  flex-direction: column;
+  border: 1px solid red;
+  gap: 5px;
+}
+.registration .field input {
+  width: 150px;
+  height: 20px;
+}
+.registration .formImage .fieldImage input {
+  width: 150px;
+  height: 20px;
+}
+.registration .formImage .fieldImage {
+  gap: 5px;
+}
+.signinForm {
+  width: 350px;
+  height: 350px;
+  gap: 5px;
+}
+.signinForm .fieldSignin {
+  gap: 5px;
+}
+.signinForm .fieldSignin input {
+  width: 250px;
+}
+.onlineShopping {
+  width: 250px;
+}
+main div {
+  width: 250px;
+}
+}

@@ -306,7 +306,7 @@ header {
 #smallDiv {
   border: 1px solid red;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;

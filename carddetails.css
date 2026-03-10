@@ -304,6 +304,7 @@ header {
   object-fit: cover;
 }
 #smallDiv {
+  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   width: 100%;

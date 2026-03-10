@@ -315,7 +315,7 @@ header {
 .productSmallImages {
   border: 1px solid yellow;
   width: 120px;
-  /* height: 100%; */
+  height: 100px;
   cursor: pointer;
   display: flex;
   justify-content: center;

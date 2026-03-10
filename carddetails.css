@@ -296,7 +296,7 @@ header {
 }
 #bigImage {
   width: 100%;
-  min-height: 350px;
+  height: 350px;
   object-fit: cover;
   display: flex;
 }
@@ -305,6 +305,7 @@ header {
   flex-wrap: wrap;
   width: 100%;
   min-height: 150px;
+  object-fit: cover;
 }
 .productSmallImages {
   width: 115px;

@@ -335,7 +335,7 @@ header {
   border-radius: 5px;
 }
 .productSmallImages.activeImage {
-  border: 1px solid blue;
+  border: 2px solid blue;
 }
 .cardDetailsCenter {
   display: flex;

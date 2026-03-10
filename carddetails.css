@@ -294,9 +294,13 @@ header {
   flex-direction: column;
   gap: 10px;
 }
-#bigImage {
+.bigImageDiv {
   width: 558px;
   height: 450px;
+}
+#bigImage {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: flex;
 }

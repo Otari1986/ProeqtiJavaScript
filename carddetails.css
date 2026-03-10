@@ -295,7 +295,7 @@ header {
   gap: 10px;
 }
 .bigImageDiv {
-  border: 1px solid red;
+  border: 1px solid blue;
   width: 558px;
   height: 450px;
 }
@@ -310,13 +310,13 @@ header {
   flex-wrap: wrap;
   width: 100%;
   min-height: 150px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .productSmallImages {
-  width: 115px;
-  height: 150px;
-  display: flex;
-  flex-wrap: wrap;
+  width: 120px;
+  height: 100%;
+  /* display: flex;
+  flex-wrap: wrap; */
   /* object-fit: cover; */
   cursor: pointer;
 }

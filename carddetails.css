@@ -295,14 +295,14 @@ header {
   gap: 10px;
 }
 .bigImageDiv {
-  border: 1px solid red;
+  border: 1px solid blue;
   width: 558px;
   height: 450px;
 }
 #bigImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 #smallDiv {
   border: 1px solid red;
@@ -324,7 +324,7 @@ header {
 }
 .productSmallImages img {
   width: 100%;
-  /* height: 150px; */
+  height: 100%;
   object-fit: contain;
 }
 .productSmallImages.activeImage {

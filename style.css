@@ -605,22 +605,22 @@ footer iframe {
   .registration .formName {
     /* width: 100%; */
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   gap: 5px;
 }
 .registration .formEmail {
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   gap: 5px;
 }
 .registration .formPhone {
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   gap: 5px;
 }
 .registration .formAddress {
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   gap: 5px;
 }
 .registration .field input {

@@ -443,11 +443,11 @@ footer iframe {
     align-items: center;
   }
   .bigImageDiv {
-    width: 755px;
+    max-width: 755px;
     height: 450px;
   }
   #smallDiv {
-    width: 755px;
+    max-width: 755px;
   }
 }
 

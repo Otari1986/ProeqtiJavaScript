@@ -573,7 +573,7 @@ main div {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .bigImageDiv {
     width: 350px;
     height: 300px;
@@ -585,10 +585,10 @@ main div {
 
 @media screen and (max-width: 375px) {
   .bigImageDiv {
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
   }
   #smallDiv {
-    max-width: 350px;
+    max-width: 300px;
   }
 }

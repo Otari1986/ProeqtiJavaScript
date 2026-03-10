@@ -295,7 +295,7 @@ header {
   gap: 10px;
 }
 .bigImageDiv {
-  border: 1px solid yellow;
+  border: 1px solid red;
   width: 558px;
   height: 450px;
 }

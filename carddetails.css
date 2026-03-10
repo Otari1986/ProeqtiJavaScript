@@ -458,11 +458,11 @@ footer iframe {
     align-items: center;
   }
   .bigImageDiv {
-    width: 500px;
+    width: 600px;
     height: 400px;
   }
   #smallDiv {
-    max-width: 500px;
+    max-width: 600px;
   }
   nav {
     flex-direction: column;
@@ -563,9 +563,9 @@ main div {
 }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 375) {
   .bigImageDiv {
-    width: 300px;
+    width: 350px;
     height: 250px;
   }
   #smallDiv {

@@ -565,30 +565,30 @@ main div {
 
 @media screen and (max-width: 600px) {
   .bigImageDiv {
-    width: 80%;
+    width: 400px;
     height: 350px;
   }
   #smallDiv {
-    max-width: 80%;
+    max-width: 400px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .bigImageDiv {
-    width: 80%;
+    width: 350px;
     height: 300px;
   }
   #smallDiv {
-    max-width: 80%;
+    max-width: 350px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .bigImageDiv {
-    width: 80%;
+    width: 250px;
     height: 250px;
   }
   #smallDiv {
-    max-width: 80%;
+    max-width: 250px;
   }
 }

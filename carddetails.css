@@ -301,7 +301,7 @@ header {
 }
 #bigImage {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 #smallDiv {
   border: 1px solid red;

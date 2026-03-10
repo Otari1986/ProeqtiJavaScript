@@ -308,7 +308,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 150px;
+  min-height: 100px;
 }
 .productSmallImages {
   width: 120px;

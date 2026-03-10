@@ -295,7 +295,7 @@ header {
   gap: 10px;
 }
 .bigImageDiv {
-  border: 1px solid blue;
+  border: 1px solid gray;
   max-width: 560px;
   height: 450px;
   border-radius: 5px;
@@ -335,7 +335,7 @@ header {
   border-radius: 5px;
 }
 .productSmallImages.activeImage {
-  border: 5px solid blue;
+  border: 1px solid blue;
 }
 .cardDetailsCenter {
   display: flex;

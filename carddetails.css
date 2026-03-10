@@ -565,15 +565,15 @@ main div {
 
 @media screen and (max-width: 600px) {
   .bigImageDiv {
-    width: 450px;
+    width: 400px;
     height: 350px;
   }
   #smallDiv {
-    max-width: 450px;
+    max-width: 400px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .bigImageDiv {
     width: 350px;
     height: 300px;
@@ -586,7 +586,7 @@ main div {
 @media screen and (max-width: 375px) {
   .bigImageDiv {
     width: 350px;
-    height: 250px;
+    height: 300px;
   }
   #smallDiv {
     max-width: 350px;

@@ -307,7 +307,6 @@ header {
   border-radius: 5px;
 }
 #smallDiv {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -318,7 +317,6 @@ header {
   border-radius: 5px;
 }
 .productSmallImages {
-  /* border: 1px solid yellow; */
   width: 120px;
   height: 100px;
   cursor: pointer;

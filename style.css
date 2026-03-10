@@ -597,30 +597,24 @@ footer iframe {
   .registration {
     gap: 5px;
     font-size: 10px;
-    /* padding: 0; */
   }
   .registration .field {
     gap: 5px;
   }
   .registration .formName {
-    /* width: 100%; */
   flex-direction: column;
-  /* border: 1px solid red; */
   gap: 5px;
 }
 .registration .formEmail {
   flex-direction: column;
-  /* border: 1px solid red; */
   gap: 5px;
 }
 .registration .formPhone {
   flex-direction: column;
-  /* border: 1px solid red; */
   gap: 5px;
 }
 .registration .formAddress {
   flex-direction: column;
-  /* border: 1px solid red; */
   gap: 5px;
 }
 .registration .field input {

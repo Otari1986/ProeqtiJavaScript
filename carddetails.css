@@ -293,10 +293,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: 5px solid yellow;
 }
 #bigImage {
-  border: 5px solid red;
   width: 100%;
   min-height: 350px;
   object-fit: cover;
@@ -307,10 +305,8 @@ header {
   flex-wrap: wrap;
   width: 100%;
   min-height: 150px;
-  border: 10px solid green;
 }
 .productSmallImages {
-  border: 5px solid violet;
   width: 115px;
   height: 150px;
   display: flex;

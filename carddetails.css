@@ -295,7 +295,7 @@ header {
   gap: 10px;
 }
 .bigImageDiv {
-  border: 1px solid red;
+  border: 1px solid blue;
   width: 558px;
   height: 450px;
 }
@@ -313,6 +313,9 @@ header {
   width: 120px;
   height: 100%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .productSmallImages img {
   width: 100%;

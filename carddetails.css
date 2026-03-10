@@ -434,6 +434,9 @@ footer iframe {
     flex-direction: column;
     align-items: center;
   }
+  .bigImageDiv {
+    width: 755px;
+  }
 }
 
 @media screen and (max-width: 800px) {

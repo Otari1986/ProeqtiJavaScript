@@ -1,0 +1,591 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  background-image: url("image/1.jpg");
+  background-attachment: fixed;
+  min-height: 500px;
+}
+.hiddenForm {
+  display: none;
+}
+.viewForm {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.registerForm {
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.registration {
+  padding: 20px;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+.registration span {
+  display: none;
+}
+.formHead {
+  display: flex;
+}
+.registration .field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.registration .formName {
+  display: flex;
+  gap: 30px;
+}
+.registration .formEmail {
+  display: flex;
+  gap: 30px;
+}
+.registration .formPhone {
+  display: flex;
+  gap: 30px;
+}
+.registration .formAddress {
+  display: flex;
+  gap: 30px;
+}
+.registration .field input {
+  height: 35px;
+  width: 300px;
+  padding-inline: 10px;
+}
+.registration .formImage .fieldImage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.registration .formImage .fieldImage input {
+  height: 30px;
+  width: 100%;
+  padding-inline: 10px;
+}
+.registration .formBtn {
+  padding: 10px;
+  color: white;
+  background-color: #021a3e;
+  font-size: 20px;
+  cursor: pointer;
+}
+.closeForm {
+  position: absolute;
+  padding: 10px 15px;
+  border: none;
+  top: 0;
+  right: 0;
+  background-color: red;
+  border-radius: 0 5px;
+  cursor: pointer;
+}
+.hiddenSigninForm {
+  display: none;
+}
+.viewSigninForm {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.signinForm {
+  width: 450px;
+  height: 450px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+}
+.signinForm form {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.signinForm .fieldSignin {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.signinForm .fieldSignin input {
+  width: 300px;
+  height: 35px;
+  padding-inline: 10px;
+}
+.signinForm .signinBtn {
+  padding: 10px;
+  color: white;
+  background-color: #021a3e;
+  font-size: 20px;
+  cursor: pointer;
+}
+.closeSigninForm {
+  position: absolute;
+  padding: 10px 15px;
+  border: none;
+  top: 0;
+  right: 0;
+  background-color: red;
+  border-radius: 0 5px;
+  cursor: pointer;
+}
+input {
+  outline: none;
+}
+#registerBtn:disabled {
+  border: 2px solid #b4b4b4;
+  color: #b4b4b4;
+  background-color: transparent;
+}
+.valid {
+  border: 2px solid green;
+}
+.notvalid {
+  border: 2px solid red;
+}
+.registration span {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 37px;
+  display: none;
+}
+.registration input.notvalid + span {
+  display: block;
+}
+nav {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  justify-content: space-between;
+}
+nav .navLeftBtns {
+  display: flex;
+  gap: 10px;
+}
+nav .homeBtn {
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px 25px;
+  border-radius: 5px;
+  background-color: gray;
+}
+nav .navRightBtns {
+  display: flex;
+  gap: 10px;
+}
+nav .basketBtn {
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px 35px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+nav .basket {
+  position: relative;
+}
+.basket .basketQty {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  color: red;
+  font-weight: bold;
+  font-size: 25px;
+}
+.fa-shop {
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+nav .navRegister {
+  color: white;
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 5px 25px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+nav .navSignIn {
+  color: white;
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 5px 25px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+nav .navSignOut {
+  color: white;
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 5px 25px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+nav .navRegister:hover,
+nav .navSignIn:hover {
+  cursor: pointer;
+}
+nav .shopBtn {
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px 25px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.fa-bars {
+  font-size: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none !important;
+}
+.onlineShopping {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  padding-top: 250px;
+  padding-left: 50px;
+  background-color: transparent;
+  width: 500px;
+  font-size: 45px;
+  color: white;
+}
+.onlineShopping button {
+  font-size: 20px;
+  padding: 15px 35px;
+  margin: auto;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+main div {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  background-color: #04212f;
+  color: white;
+  border-radius: 5px;
+}
+main div p {
+  font-size: 35px;
+}
+main div span {
+  font-size: 20px;
+}
+article {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  background-image: url("image/2.jpg");
+  background-attachment: fixed;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+article div {
+  font-size: 20px;
+  color: white;
+  max-width: 500px;
+  margin-left: 100px;
+}
+.bestSell {
+  border-top: 1px solid gray;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+.bestSell div {
+  background-color: white;
+  padding-inline: 10px;
+  font-size: 35px;
+  position: absolute;
+  top: -22px;
+}
+figure {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+section {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+section .card {
+  box-shadow: 0 0 10px #021a3e;
+  width: 230px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+section .card:hover {
+  box-shadow: 0 0 25px #021a3e;
+}
+section .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+section .card .price {
+  display: flex;
+  gap: 5px;
+}
+section .card .price .new {
+  font-size: 25px;
+  font-weight: bold;
+}
+section .card .price .old {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  color: red;
+  position: relative;
+  font-size: 25px;
+}
+section .card .price .old .line {
+  width: 110%;
+  height: 10px;
+  top: 12px;
+  border-bottom: 2px solid black;
+  position: absolute;
+}
+section .card .price .old.undiscounted {
+  display: none;
+}
+.stock.in {
+  background-color: rgb(10, 224, 10);
+  font-size: 20px;
+  padding: 5px 70px;
+  position: absolute;
+  left: -50px;
+  top: 22px;
+  transform: rotate(-45deg);
+}
+.stock.out {
+  background-color: rgb(235, 11, 104);
+  font-size: 18px;
+  padding: 5px 20px;
+  position: absolute;
+  left: -31px;
+  top: 22px;
+  transform: rotate(-45deg);
+}
+.addToCart {
+  position: absolute;
+  width: 170px;
+  bottom: 30px;
+  transform: translateY(70px);
+  transition: 0.5s;
+}
+section .card:hover .addToCart {
+  display: block;
+  transition: 0.5s;
+  transform: translateY(0);
+}
+.addToCart.in {
+  color: white;
+  background-color: #021a3e;
+  border: none;
+  border-radius: 5px;
+  margin-inline: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.addToCart.out {
+  color: white;
+  background-color: #021a3e;
+  border: none;
+  border-radius: 5px;
+  margin-inline: 20px;
+  padding: 10px;
+  cursor: not-allowed;
+  transition: 0.5s;
+}
+.addToCart.in:hover {
+  background-color: green;
+  box-shadow: 0 0 10px gray;
+}
+.addToCart.out:hover {
+  background-color: gray;
+  box-shadow: 0 0 10px gray;
+}
+.cardRating {
+  color: blue;
+}
+.addToCartSms {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  display: none;
+  background-color: rgb(10, 224, 10);
+  font-size: 20px;
+  padding: 5px 70px;
+  left: -21px;
+  top: 150px;
+  transform: rotate(-45deg);
+}
+.view {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.view button {
+  font-size: 20px;
+  padding: 20px 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #021a3e;
+  color: white;
+}
+.view button:hover {
+  cursor: pointer;
+}
+.contact {
+  border-top: 1px solid gray;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+.contact div {
+  background-color: white;
+  padding-inline: 10px;
+  font-size: 35px;
+  position: absolute;
+  top: -22px;
+}
+footer {
+  width: 100%;
+}
+footer iframe {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    background-size: cover;
+  }
+  .onlineShopping {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .fa-bars {
+    display: block !important;
+  }
+  nav .navLeftBtns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    visibility: hidden;
+  }
+  .navLeftBtns button {
+    border: 1px solid white;
+  }
+  nav .navRightBtns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    visibility: hidden;
+    gap: 30px;
+  }
+  .navRightBtns button {
+    border: 1px solid white;
+  }
+  nav .navLeftBtns.view {
+    visibility: visible;
+  }
+  nav .navRightBtns.view {
+    visibility: visible;
+  }
+  nav .basketBtn {
+    width: 100%;
+  }
+}

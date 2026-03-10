@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="allAreaForm" class="hiddenForm" onclick="closeForm()">
+        <div class="registerForm" onclick="event.stopPropagation()">
+            <h2 id="registerSms"></h2>
+            <button class="closeForm" onclick="closeForm()">X</button>
+            <form class="registration" onsubmit="register(event)">
+                <div class="formHead">
+                    <h1>Registration</h1>
+                </div>
+                <div class="formName">
+                    <div class="field">
+                        <label for="">first Name</label>
+                        <input class="registerInp" type="text" name="firstName">
+                        <span>Username must be between 2 and 20 characters.</span>
+                    </div>
+                    <div class="field">
+                        <label for="">Last Name</label>
+                        <input class="registerInp" type="text" name="lastName">
+                        <span>Last name must be between 2 and 20 characters.</span>
+                    </div>
+                </div>
+                <div class="formEmail">
+                    <div class="field">
+                        <label for="">Email</label>
+                        <input class="registerInp" type="email" name="email">
+                        <span>Please enter valid email</span>
+                    </div>
+                    <div class="field">
+                        <label for="">Password</label>
+                        <input class="registerInp" type="password" name="password">
+                        <span>Password must has at least 8 characters:
+                            1 lowercase, 1 uppercase, 1 number and
+                            1 special (!@#$%^&*)</span>
+                    </div>
+                </div>
+                <div class="formPhone">
+                    <div class="field">
+                        <label for="">Phone</label>
+                        <input class="registerInp" type="text" name="phone">
+                        <span>Please enter "+995" and phone number</span>
+                    </div>
+                    <div class="field">
+                        <label for="">Zipcode</label>
+                        <input class="registerInp" type="text" name="zipcode">
+                        <span>Please enter zipcode</span>
+                    </div>
+                </div>
+                <div class="formAddress">
+                    <div class="field">
+                        <label for="">Address</label>
+                        <input class="registerInp" type="text" name="address">
+                        <span>Please enter address</span>
+                    </div>
+                    <div class="field">
+                        <label for="">Age</label>
+                        <input class="registerInp" type="number" name="age">
+                        <span>Please enter age</span>
+                    </div>
+                </div>
+                <div class="formImage">
+                    <div class="fieldImage">
+                        <label for="">Image</label>
+                        <input class="registerInp" type="text" name="avatar">
+                    </div>
+                </div>
+                <div class="formGender">
+                    <div class="">
+                        <p for="">Gender</p>
+                        <input class="registerInp" type="radio" name="gender" value="MALE">
+                        <label for="">Male</label>
+                        <input class="registerInp" type="radio" name="gender" value="FEMALE">
+                        <label for="">Female</label>
+                        <input class="registerInp" type="radio" name="gender" value="OTHER">
+                        <label for="">Other</label>
+                    </div>
+                </div>
+                <button id="registerBtn" class="formBtn">REGISTER</button>
+            </form>
+        </div>
+    </div>
+    <div id="allAreaSigninForm" class="hiddenSigninForm" onclick="closeSigninForm()">
+        <div class="signinForm" onclick="event.stopPropagation()">
+            <h2 id="loginSms"></h2>
+            <button class="closeSigninForm" onclick="closeSigninForm()">X</button>
+            <form onsubmit="login(event)">
+                <h1>Login</h1>
+                <div class="fieldSignin">
+                    <label for="">email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="fieldSignin">
+                    <label for="">password</label>
+                    <input type="password" name="password">
+                </div>
+                <button class="signinBtn">LOGIN</button>
+            </form>
+        </div>
+    </div>
+    <nav>
+        <div class="navLeftBtns">
+            <i onclick="home()" class="fa-solid fa-shop"></i>
+            <button class="homeBtn" onclick="home()">Home</button>
+            <button onclick="shop()" class="shopBtn">Shop</button>
+        </div>
+        <div class="navRightBtns">
+            <button onclick="handlauthRegister(event)" id="authRegister" class="navRegister">Register</button>
+            <button onclick="handleAuthButton(event)" id="authBtn" class="navSignIn">Sign In</button>
+            <div class="basket">
+                <button onclick="goToProfile()" class="basketBtn"><i class="fa-solid fa-cart-shopping"></i>
+                    <p class="basketQty"></p>
+                </button>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showBar()"></i>
+    </nav>
+    <header>
+        <img src="image/3.jpg" alt="">
+    </header>
+    <article>
+        <div class="userImage"></div>
+        <div class="userName"></div>
+    </article>
+    <section>
+        <ul>
+            <li id="head">
+            </li>
+            <li id="carieli">No Products in Cart</li>
+        </ul>
+        <ul id="basketList">
+        </ul>
+    </section>
+    <summary>
+        <p>Total Price: $ <span id="totalPrice"> 0</span></p>
+        <div class="sumBtns">
+            <button onclick="clearCart()" class="clear">Clear Cart</button>
+            <button onclick="CheckOut()" class="proceed">PROCEED TO CHECKOUT</button>
+        </div>
+    </summary>
+    <div class="contact">
+        <div>Contact Us</div>
+    </div>
+    <footer>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1799663.7546545616!2d43.63148799665896!3d42.198963795164005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1772054794417!5m2!1sen!2sge"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

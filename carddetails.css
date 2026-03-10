@@ -458,11 +458,11 @@ footer iframe {
     align-items: center;
   }
   .bigImageDiv {
-    width: 600px;
+    width: 550px;
     height: 400px;
   }
   #smallDiv {
-    max-width: 600px;
+    max-width: 550px;
   }
   nav {
     flex-direction: column;
@@ -563,12 +563,32 @@ main div {
 }
 }
 
+@media screen and (max-width: 600) {
+  .bigImageDiv {
+    width: 450px;
+    height: 350px;
+  }
+  #smallDiv {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bigImageDiv {
+    width: 350px;
+    height: 300px;
+  }
+  #smallDiv {
+    max-width: 350px;
+  }
+}
+
 @media screen and (max-width: 375) {
   .bigImageDiv {
     width: 350px;
     height: 250px;
   }
   #smallDiv {
-    max-width: 300px;
+    max-width: 350px;
   }
 }

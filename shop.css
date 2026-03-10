@@ -379,8 +379,6 @@ article {
   background-color: #021a3e;
   border: none;
   border-radius: 5px;
-}
-.category button:hover {
   cursor: pointer;
 }
 .category button.activeCategory {
@@ -588,12 +586,15 @@ footer iframe {
   aside {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
     border-right: 1px solid gray;
     width: 100%;
+    justify-content: center;
   }
   main aside form button {
     margin-inline: 10px;
+    padding: 10px 105px;
   }
 
   .fa-bars {

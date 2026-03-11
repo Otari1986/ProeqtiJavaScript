@@ -11,7 +11,7 @@ function card(item) {
     let isOut = item.stock <= 0
     let undiscounted = item.price.discountPercentage == 0
     return `<div class="card" onclick="showCardDetails('${item._id}')">
-                <img src="${item.thumbnail}" alt="">
+                <div class="cardPic"><img src="${item.thumbnail}" alt=""></div>
                 <h3>${item.title.slice(0, 18)}</h3>
                 <div class="price">
                     <p class="new">${item.price.currency} ${item.price.current}</p>

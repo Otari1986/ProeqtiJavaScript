@@ -394,14 +394,19 @@ section .card {
   overflow: hidden;
   transition: 0.3s;
   cursor: pointer;
+  border: 1px solid red;
 }
 section .card:hover {
   box-shadow: 0 0 25px #021a3e;
 }
+.cardPic {
+  width: 210px;
+  height: 180px;
+}
 section .card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 section .card .price {
   display: flex;

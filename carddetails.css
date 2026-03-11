@@ -295,8 +295,8 @@ header {
   gap: 10px;
 }
 .bigImageDiv {
-  border: 1px solid gray;
-  max-width: 560px;
+  border: 1px solid blue;
+  width: 560px;
   height: 450px;
   border-radius: 5px;
 }
@@ -312,7 +312,7 @@ header {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  max-width: 560px;
+  width: 560px;
   min-height: 100px;
   border-radius: 5px;
 }
@@ -445,7 +445,7 @@ footer iframe {
     height: 450px;
   }
   #smallDiv {
-    max-width: 755px;
+    width: 755px;
   }
 }
 

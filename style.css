@@ -394,7 +394,6 @@ section .card {
   overflow: hidden;
   transition: 0.3s;
   cursor: pointer;
-  border: 1px solid red;
 }
 section .card:hover {
   box-shadow: 0 0 25px #021a3e;
